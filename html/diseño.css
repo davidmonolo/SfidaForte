@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*navegacion*/
+.navegacion {
+    background: #212121;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: -10px;
+}
+.logo .logo-img {
+    height: 50px;
+    width: auto;
+    margin-top: 4px;
+}
+.navegacion ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Organiza los elementos en línea */
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    align-items: center; /* Alinea verticalmente los elementos */
+    width: 100%;
+}
+.navegacion .logo {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    color: #c8c8c8;
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.links {
+    display: flex;
+    justify-content: center; /* Centra los iconos de navegación */
+    flex-grow: 1; /* Permite que la sección de los iconos ocupe el espacio restante */
+    gap: 10px;
+}
+.bx {
+    color: #c8c8c8;
+    font-size: 32px;/*tamañogeneral*/
+}
+/*body interfas*/
+.text1{
+    display: flex; /* Coloca los elementos en línea horizontal */
+  gap: 470px; /* Espaciado entre elementos */
+  margin-top: 50px;
+}
+.superior{
+    width: 400px;
+    height: 400px;
+    margin-top: 1%;
+    margin-left: 5%;
+    border-radius: 20%;
+}
+.textsupe{
+    margin-left: 13%;
+}
+.inferior{
+    border-radius: 20%;
+    width: 250px;
+    height: 400px;
+    margin-top: 1%;
+    margin-left: 25%;
+}
+.navsuptext{
+    display: flex; /* Coloca los elementos en línea horizontal */
+}
+.imgsupinf{
+    display: flex; /* Coloca los elementos en línea horizontal */
+ margin-left: 5%;
+ gap: 42.3%;
+}
+.objetivo{
+    margin-left: 370px;
+    font-family: "Poppins", serif;/*tipografia*/
+    font-weight: 400;/*grosor de letra*/
+    font-style: normal;/*estilo*/
+    font-size: 12px;/*tamaño letra*/
+}
+/*superior*/
+.textesopaldaypecho{
+    margin-top: 5%;
+    display: flex; /* Coloca los elementos en línea horizontal */
+    gap: 465px; /* Espaciado entre elementos */
+}
+.textespalda{
+    margin-left: 29.5%;
+}
+.imgespalda{
+    width: 250px;
+    height: 200px;
+    margin-top: 1%;
+    margin-left: 22.5%;
+    border-radius: 20%;
+
+}
+.imgpecho{
+    width: 250px;
+    height: 200px;
+    margin-top: 1%;
+    border-radius: 20%;
+    margin-left: 20%;
+}
+.texttorzoybrazo{
+    margin-top: 5%;
+    display: flex; /* Coloca los elementos en línea horizontal */
+    gap: 450px; /* Espaciado entre elementos */
+}
+.texttorzo{
+    margin-left: 30%;
+}
+.imgtorzo{
+    width: 300px;
+    height: 200px;
+    margin-top: 1%;
+    margin-left: 22.5%;
+    border-radius: 20%;
+
+}
+.imgbrazo{
+    width: 200px;
+    height: 200px;
+    margin-top: 1%;
+    border-radius: 20%;
+    margin-left: 19%;
+}
+/*pecho*/
+.textpechoaltoymedio{
+    margin-top: 5%;
+    display: flex; /* Coloca los elementos en línea horizontal */
+    gap: 440px; /* Espaciado entre elementos */
+}
+.textpechoalto{
+    margin-left: 20%;
+}
+.imgpechoalto{
+    width: 300px;
+    height: 200px;
+    margin-top: 1%;
+    margin-left: 15.5%;
+    border-radius: 20%;
+
+}
+.imgpechomedio{
+    width: 300px;
+    height: 200px;
+    margin-top: 1%;
+    border-radius: 20%;
+    margin-left: 23.5%;
+}
+.textpechobajo{
+    text-align: center;
+}
+.imgepechobajo{
+    text-align: center;
+}
+.imgpechobajo{
+    
+    width: 300px;
+    height: 200px;
+    margin-top: 1%; 
+    border-radius: 20%;
+}
+/*brazo*/
+.texthombroybicep{
+    margin-top: 5%;
+    display: flex; /* Coloca los elementos en línea horizontal */
+    gap: 465px; /* Espaciado entre elementos */
+}
+.texthombro{
+    margin-left: 29.5%;
+}
+.imghombro{
+    width: 250px;
+    height: 200px;
+    margin-top: 1%;
+    margin-left: 22.5%;
+    border-radius: 20%;
+
+}
+.imgbicep{
+    width: 250px;
+    height: 200px;
+    margin-top: 1%;
+    border-radius: 20%;
+    margin-left: 20%;
+}
+.texttricepyantebrazo{
+    margin-top: 5%;
+    display: flex; /* Coloca los elementos en línea horizontal */
+    gap: 450px; /* Espaciado entre elementos */
+}
+.texttricep{
+    margin-left: 30%;
+}
+.imgtricep{
+    width: 250px;
+    height: 200px;
+    margin-top: 1%;
+    margin-left: 22.5%;
+    border-radius: 20%;
+
+}
+.imgantebrazo{
+    width: 250px;
+    height: 200px;
+    margin-top: 1%;
+    border-radius: 20%;
+    margin-left: 20%;
+}
+/*inferior*/
+.textcuadricepsfemoral{
+    margin-top: 5%;
+    display: flex; /* Coloca los elementos en línea horizontal */
+    gap: 425.5px; /* Espaciado entre elementos */
+}
+.textcuadriceps{
+    margin-left: 27%;
+}
+.imgcuadriceps{
+    width: 200px;
+    height: 300px;
+    margin-top: 1%;
+    margin-left: 22.5%;
+    border-radius: 20%;
+
+}
+.imgfemoral{
+    width: 150px;
+    height: 300px;
+    margin-top: 1%;
+    border-radius: 20%;
+    margin-left: 23.5%;
+}
+.textpantorrillaygluteo{
+    margin-top: 5%;
+    display: flex; /* Coloca los elementos en línea horizontal */
+    gap: 460px; /* Espaciado entre elementos */
+}
+.textpantorrilla{
+    margin-left: 25%;
+}
+.imgpantorrilla{
+    width: 150px;
+    height: 300px;
+    margin-top: 1%;
+    margin-left: 22.5%;
+    border-radius: 20%;
+
+}
+.imggluteo{
+    width: 300px;
+    height: 250px;
+    margin-top: 1%;
+    border-radius: 20%;
+    margin-left: 23.5%;
+    margin-bottom: 50px;
+}
+/*espalda*/
+.titulofuerzamaxima{
+  margin-left: 5%;
+  margin-top: 70px;
+}
+.imgfuerzamaxima{
+    text-align: center;
+    margin-top: 1.5%;
+}
+.textfuerzamaxima{
+    text-align: center;
+    font-family: "Poppins", serif;/*tipografia*/
+  font-weight: 400;/*grosor de letra*/
+  font-style: normal;/*estilo*/
+}
+.titulofuerzaresistencia{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.imgfuerzaresistencia{
+  text-align: center;
+  margin-top: 1.5%;
+}
+.textfuerzaresistencia{ 
+  text-align: center;
+  font-family: "Poppins", serif;/*tipografia*/
+  font-weight: 400;/*grosor de letra*/
+  font-style: normal;/*estilo*/
+}
+.titulofuerzarapida{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.imgfuerzarapida{
+  text-align: center;
+  margin-top: 1.5%;
+}
+.textfuerzarapida{ 
+  text-align: center;
+  font-family: "Poppins", serif;/*tipografia*/
+  font-weight: 400;/*grosor de letra*/
+  font-style: normal;/*estilo*/
+}
+.titulodominadas{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.imgdominadas{
+    width: 500px;
+    height: 400px;
+}
+.imgdomindasgrande{
+    text-align: center;
+}
+.textdominadas{
+    margin-left: 300px;
+    font-family: "Poppins", serif;/*tipografia*/
+    font-weight: 400;/*grosor de letra*/
+    font-style: normal;/*estilo*/
+}
+.titulodominadasagarrecerrado{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.imgdomindasagarrecerrado{
+    width: 500px;
+    height: 400px;
+}
+.imgdomindasgrandeagarrecerrado{
+    text-align: center;
+    margin-top: 40px;
+}
+.textdominadasagarrecerrado{
+    margin-left: 300px;
+    font-family: "Poppins", serif;/*tipografia*/
+    font-weight: 400;/*grosor de letra*/
+    font-style: normal;/*estilo*/
+}
+.titulojalonalpecho{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.imgjalonalpecho{
+    width: 500px;
+    height: 400px;
+}
+.imgjalonalpechogrande{
+    text-align: center;
+    margin-top: 40px;
+}
+.textjalonalpecho{
+    margin-left: 250px;
+    font-family: "Poppins", serif;/*tipografia*/
+    font-weight: 400;/*grosor de letra*/
+    font-style: normal;/*estilo*/
+}
+.tituloremo{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.imgremo{
+    width: 500px;
+    height: 400px;
+}
+.imgremogrande{
+    text-align: center;
+    margin-top: 40px;
+}
+.textremo{
+    margin-left: 250px;
+    font-family: "Poppins", serif;/*tipografia*/
+    font-weight: 400;/*grosor de letra*/
+    font-style: normal;/*estilo*/
+}
+.titulorotacionabd{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.imgrotacionabd{
+    width: 500px;
+    height: 400px;
+}
+.imgrotacionabdgrande{
+    text-align: center;
+    margin-top: 40px;
+}
+.textrotacionabd{
+    margin-left: 250px;
+    font-family: "Poppins", serif;/*tipografia*/
+    font-weight: 400;/*grosor de letra*/
+    font-style: normal;/*estilo*/
+}
+.tituloabdmariposa{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.imgabdmariposa{
+    width: 500px;
+    height: 400px;
+}
+.imgabdmariposagrande{
+    text-align: center;
+    margin-top: 40px;
+}
+.textabdmariposa{
+    margin-left: 250px;
+    font-family: "Poppins", serif;/*tipografia*/
+    font-weight: 400;/*grosor de letra*/
+    font-style: normal;/*estilo*/
+}
+.titulomontain{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.imgmontain{
+    width: 500px;
+    height: 400px;
+}
+.imgmontaingrande{
+    text-align: center;
+    margin-top: 40px;
+}
+.textmontain{
+    margin-left: 250px;
+    font-family: "Poppins", serif;/*tipografia*/
+    font-weight: 400;/*grosor de letra*/
+    font-style: normal;/*estilo*/
+}
