@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SfidaForte</title>
+    <link rel="stylesheet" href="/diseño.css">
+    <link rel="icon" href="/imagenes/logo.ico" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .calculator {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        text-align: center;
+    }
+    .calculator input, .calculator select, .calculator button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .calculator button {
+        background: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .calculator button:hover {
+        background: #0056b3;
+    }
+    .result {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+
+<body>
+    <div class="navegacion">
+        <nav>
+            <ul> <!--crear una lista-->
+                <li class="logo"><img class="logo-img" src="/imagenes/logo.jpg" alt=""/>Sfidaforte</li> <!--lo que va dentro de la lista -->
+                <div class="links">
+                    <li><a href="/Interfas.html"><i class='bx bxs-home' ></i></a></li><!--subclase-->
+                    <li><a href="/html/calculadora.html"><i class='bx bx-math'></i></a></li>
+                    <li><a href="/html/Bibliografia.html"><i class='bx bxs-copy-alt' ></i></a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="calculator">
+        <h2>Calculadora de Metabolismo Basal</h2>
+        <form id="bmrForm">
+            <input type="number" id="edad" placeholder="Edad (años)" required>
+            <input type="number" id="peso" placeholder="Peso (kg)" required>
+            <input type="number" id="altura" placeholder="Altura (cm)" required>
+            <select id="genero" required>
+                <option value="" disabled selected>Selecciona tu género</option>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+            </select>
+            <button type="button" onclick="calcularBMR()">Calcular</button>
+        </form>
+        <div id="resultado" class="result"></div>
+    </div>
+
+    <script>
+        function calcularBMR() {
+            const edad = parseInt(document.getElementById('edad').value);
+            const peso = parseFloat(document.getElementById('peso').value);
+            const altura = parseFloat(document.getElementById('altura').value);
+            const genero = document.getElementById('genero').value;
+
+            if (!edad || !peso || !altura || !genero) {
+                document.getElementById('resultado').innerText = "Por favor completa todos los campos.";
+                return;
+            }
+
+            let bmr;
+            if (genero === "hombre") {
+                bmr = 88.36 + (13.4 * peso) + (4.8 * altura) - (5.7 * edad);
+            } else if (genero === "mujer") {
+                bmr = 447.6 + (9.2 * peso) + (3.1 * altura) - (4.3 * edad);
+            }
+
+            document.getElementById('resultado').innerText = `Tu metabolismo basal es: ${bmr.toFixed(2)} calorías/día.`;
+        }
+    </script>
+</body>
+</html>
